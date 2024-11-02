@@ -1,0 +1,70 @@
+:root {
+    --primary-color: #374352;
+    --secondary-color: #f9fbff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#calculator {
+    border-radius: 30px;
+    background: var(--primary-color);
+    box-shadow: 20px 20px 60px #2f3946,
+        -20px -20px 60px #3f4d5e;
+    color: var(--secondary-color);
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    border: 1.5px solid var(--secondary-color);
+}
+
+#screen{
+    width: 100%;
+    height: 150px;
+    font-size: 32px;
+    text-align: right;
+    margin-bottom: 20px;
+    border: 0.5px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 10px;
+    background: #445264;
+    box-shadow:  20px 20px 60px #2f3946,
+                 -20px -20px 60px #3f4d5e;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--secondary-color);
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+button {
+    color: var(--secondary-color);
+    border-radius: 10px;
+    background: linear-gradient(480deg, #2d3643, #415061);
+    box-shadow:  20px 20px 60px #2f3946,
+    -20px -20px 60px #3f4d5e;
+    padding: 20px 20px;
+    border: none;
+}
